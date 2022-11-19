@@ -1,0 +1,415 @@
+ 1 Pattern 
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= i; j++)
+        {
+           printf("*") ;
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+2 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= 4; j++)
+        {
+            if (j>= 4-i)
+                printf("*") ;
+            else
+                printf(" ");    
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+3 Pattern 
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= 4-i; j++)
+        {
+           printf("*") ;
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+4 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= 4; j++)
+        {
+            if (j<i)
+                printf(" ");
+            else 
+                printf("*");        
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+5 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= 4+i; j++)
+        {
+            if (4-i<=j)
+                printf("*");   
+            else    
+                printf(" ");         
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+6 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= 8-i; j++)
+        {
+            if (j>=i)
+                printf("*") ;
+            else
+                printf(" ");            
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+7 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i <=4; i++)
+    {
+        for ( j= 0; j <= 8; j++)
+        {
+            if((j<=4-i)||(j>=4+i))
+                printf("*");  
+            else    
+                printf(" ");              
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+8 Pattern
+#include<stdio.h>
+int main()
+{
+    int c,i , j;
+    for (i = 0; i <=3; i++)
+    {
+        for ( j= 0 , c = 1;j<=3+i; j++)
+        {
+            if(3-i<=j)
+                {printf("%d",c);
+                if (j<3)
+                    c++; 
+                else    
+                    c--; }
+            else
+                printf(" ");                    
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+9 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j,c;
+    for (i = 3; i >=0; i--)
+    {
+        for ( j= 0 , c = 1;j<=3+i; j++)
+        {
+            if (3-i<=j)
+                {printf("%d",c);
+                if (j<3)
+                    c++;
+                else
+                    c--;  }
+            else
+                printf(" ");
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+10 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j,n=1;
+    for (i = 0; i <4; i++)
+    {
+        n = 1;
+        for ( j= 0; j <7; j++)
+        {
+            if (j==4 && i == 0)
+            {
+                n = n-2;
+                printf("%d",n);
+            }
+            else if((j>=0)&&(j<=3-i))
+                printf("%d",n++);  
+            else if ((j>=3+i)&&(j<=6))
+            {
+                printf("%d",--n); 
+            }       
+            else    
+                printf(" ");              
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+11 pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    char c;
+    for (i = 0; i <=4; i++)
+    {
+        for ( j= 0 , c = 'A';j<=4+i; j++)
+        {
+            if(4-i<=j)
+                {printf("%c",c);
+                if (j<4)
+                    c++; 
+                else    
+                    c--; }
+            else
+                printf(" ");                    
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+12 pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    char c;
+    for (i = 3; i >=0; i--)
+    {
+        for ( j= 0 , c = 'A';j<=3+i; j++)
+        {
+            if (3-i<=j)
+                {printf("%c",c);
+                if (j<3)
+                    c++;
+                else
+                    c--;  }
+            else
+                printf(" ");
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+13 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    char n='A';
+    for (i = 0; i <7; i++)
+    {
+        n = 'A';
+        for ( j= 0; j <13; j++)
+        {
+            if (j==7 && i == 0)
+            {
+                n = n-2;
+                printf("%c",n);
+            }
+            else if((j>=0)&&(j<=6-i))
+                printf("%c",n++);  
+            else if ((j>=6+i)&&(j<=13))
+            {
+                printf("%c",--n); 
+            }       
+            else    
+                printf(" ");              
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+14 Pattern
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for (i = 0;i<=4;i++)
+    {
+        for (j = 0;j<=4;j++)
+        {
+            if (j == 0 || j == i || i == 4)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0 ; 
+}
+
+15 Pattern
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for (i = 0;i<=4;i++)
+    {
+        for (j = 0;j<=4;j++)
+        {
+            if (j == 4 || j== 4-i || i == 4)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0 ; 
+}
+
+16 Pattern
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for (i = 0;i<=4;i++)
+    {
+        for (j = 0;j<=8;j++)
+        {
+            if ((j ==4 && i ==0)|| i == 4 ||j == 4-i || j==4+i)
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0 ; 
+}
+
+17 Pattern
+#include<stdio.h>
+int main()
+{
+    int i,j;
+    for (i = 0;i<=4;i++)
+    {
+        for (j = 0;j<=8;j++)
+        {
+            if ((j ==4 && i ==4)|| i == 0 || j == i || j == 8-i) 
+                printf("*");
+            else
+                printf(" ");
+        }
+        printf("\n");
+    }
+    return 0 ; 
+}
+
+18 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for (i = 0; i < 4; i++)
+    {
+        for ( j= 0; j <= 3+i; j++)
+        {
+            if (3-i<=j)
+                printf("*");   
+            else    
+                printf(" ");         
+        }
+        printf("\n");          
+    }
+    for (i = 0; i < 5; i++)
+    {
+        for ( j= 0; j <= 8-i; j++)
+        {
+            if (j>=i)
+                printf("*") ;
+            else
+                printf(" ");            
+        }
+    printf("\n") ;   
+    }
+return 0 ; 
+}
+
+19 Pattern
+#include<stdio.h>
+int main()
+{
+    int i , j;
+    for(i = 0 ;i <3; i++)
+    {
+        for (j = 1; j<=17;j++)
+        {
+            if((j>=3-i && j<=6+i)||(j>=12-i && j<=15+i))
+                printf("*");
+            else
+                printf(" ");    
+        }
+    printf("\n");
+    }
+    for ( i = 0; i < 9; i++)
+    {
+        for ( j = 1; j <= 17; j++)
+        {
+            if (j>=i+1 && j<=17-i)
+                printf("*");
+            else 
+                printf(" ");    
+        }
+    printf("\n");    
+    }   
+return 0;    
+}
